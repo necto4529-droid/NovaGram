@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/NovaGram/', // название твоего репозитория
-  server: {
-    port: 3000,
-  }
+  plugins: [vue()],
+  base: '/NovaGram/', // <--- очень важно
 })
