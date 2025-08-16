@@ -1,10 +1,10 @@
-name: Deploy NovaGram
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main   # запускается при пуше в main
-  workflow_dispatch: # ✅ кнопка для ручного запуска
+      - main  # ветка, из которой будет деплой
+  workflow_dispatch:
 
 jobs:
   build:
